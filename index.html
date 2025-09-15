@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATMParts</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Nosso CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ATMParts</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+            <!-- Hero Section / Informações Iniciais -->
+            <section id="inicio" class="hero-section text-center">
+                <div class="container">
+                    <h1 class="display-4 fw-bold">Bem-vindo ao ATMParts</h1>
+                    <p class="lead"></p>
+                    <a href="#produtos" class="btn btn-primary btn-lg mt-3">Ver Produtos</a>
+                </div>
+            </section>
+
+            <!-- Produtos Section -->
+            <section id="produtos" class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-5">Nossos Produtos</h2>
+                    
+                    <div class="row">
+                        <!-- Produto 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card product-card">
+                                <img src="img/MOTO-REDUTOR-PORTA-2.png" class="card-img-top" alt="Motor Porta" style="max-height: 100%; width: auto; object-fit: contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Motoredutor Porta</h5>
+                                    <p class="card-text">Motoredutor para porta de automação é um sistema mecatrônico completo que combina um motor elétrico com um trem de engrenagens.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="h5 mb-0 text-primary"></span>
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#productModal1">
+                                            Descrição
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Produto 2 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card product-card">
+                                <img src="img/MOTOREDUTOR-TRACION-1.png" class="card-img-top" alt="Motor de Tração" style="max-height: 100%; width: auto; object-fit: contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Motoredutor de Tração</h5>
+                                    <p class="card-text">Um motoredutor de tração é um acionamento eletromecânico compacto e integrado, composto por um motor elétrico.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="h5 mb-0 text-primary"></span>
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#productModal2">
+                                            Descrição
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Produto 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card product-card">
+                                <img src="img/MINI-MOTOR.png" class="card-img-top" alt="Mini Motor" style="max-height: 100%; width: auto; object-fit: contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mini Motor</h5>
+                                    <p class="card-text">O Mini motor, é um mini motor robustos que conta com uma caixa de redução 200:1 de engrenagens de metal.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="h5 mb-0 text-primary"></span>
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#productModal3">
+                                            Descrição
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Produto 4 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card product-card">
+                                <img src="img/BIO.png" class="card-img-top" alt="Leitor Biometrico" style="max-height: 100%; width: auto; object-fit: contain;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Leitor Biometrico</h5>
+                                    <p class="card-text">Leitor Biometrico para integração em projetos.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="h5 mb-0 text-primary"></span>
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#productModal4">
+                                            Descrição
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Produto 5 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card product-card">
+                                <div class="image-container" style="height: 200px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                                    <img src="img/MITRA.png" class="card-img-top img-adjusted" alt="Trava Eletrônica" style="max-height: 100%; width: auto; object-fit: contain;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Trava Eletrônica (Mitra)</h5>
+                                    <p class="card-text">Dispositivo que permite trancar ou destrancar uma porta, controlando acessos em ambientes internos ou externos.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="h5 mb-0 text-primary"></span>
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#productModal5">
+                                            Descrição
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!-- Modal para Produto 1 -->
+    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel1">Motoredutor Porta - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 modal-image-container">
+                            <img src="img/MOTO-REDUTOR-PORTA-2.png" class="modal-product-image" alt="Motoredutor Porta">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Motoredutor Porta</h4>
+                            <p class="text-muted">Modelo: MP-2023</p>
+                            <p>Motoredutor para porta de automação é um sistema mecatrônico completo que combina um motor elétrico com um trem de engrenagens.</p>
+                            
+                            <h5>Características Principais:</h5>
+                            <ul class="feature-list">
+                                <li>Sistema completo de automação para portas</li>
+                                <li>Motor elétrico de alta eficiência</li>
+                                <li>Trem de engrenagens de precisão</li>
+                                <li>Baixo nível de ruído</li>
+                                <li>Fácil instalação e manutenção</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h5>Especificações Técnicas:</h5>
+                        <table class="specs-table">
+                            <tr>
+                                <th>Tensão</th>
+                                <td>110V/220V</td>
+                            </tr>
+                            <tr>
+                                <th>Potência</th>
+                                <td>250W</td>
+                            </tr>
+                            <tr>
+                                <th>Velocidade</th>
+                                <td>15-20 RPM</td>
+                            </tr>
+                            <tr>
+                                <th>Capacidade de Carga</th>
+                                <td>Até 400kg</td>
+                            </tr>
+                            <tr>
+                                <th>Garantia</th>
+                                <td>24 meses</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary solicitar-orcamento" data-product="Motoredutor Porta">
+                        Solicitar Orçamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Produto 2 -->
+    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel2">Motoredutor de Tração - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 modal-image-container">
+                            <img src="img/MOTOREDUTOR-TRACION-1.png" class="modal-product-image" alt="Motoredutor de Tração">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Motoredutor de Tração</h4>
+                            <p class="text-muted">Modelo: MT-2023</p>
+                            <p>Um motoredutor de tração é um acionamento eletromecânico compacto e integrado, composto por um motor elétrico (geralmente de corrente contínua - CC, ou assíncrono - CA) acoplado diretamente a um redutor (caixa de engrenagens).</p>
+                            
+                            <h5>Características Principais:</h5>
+                            <ul class="feature-list">
+                                <li>Design compacto e integrado</li>
+                                <li>Alta eficiência energética</li>
+                                <li>Operação silenciosa</li>
+                                <li>Compatível com sistemas de controle</li>
+                                <li>Baixa manutenção</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h5>Especificações Técnicas:</h5>
+                        <table class="specs-table">
+                            <tr>
+                                <th>Tensão</th>
+                                <td>24V DC / 220V AC</td>
+                            </tr>
+                            <tr>
+                                <th>Potência</th>
+                                <td>100W - 500W</td>
+                            </tr>
+                            <tr>
+                                <th>Relação de Transmissão</th>
+                                <td>10:1 a 100:1</td>
+                            </tr>
+                            <tr>
+                                <th>Torque Máximo</th>
+                                <td>Até 150 Nm</td>
+                            </tr>
+                            <tr>
+                                <th>Garantia</th>
+                                <td>18 meses</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary solicitar-orcamento" data-product="Motoredutor Tração">
+                        Solicitar Orçamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Produto 3 -->
+    <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel3">Mini Motor - Detalhes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 modal-image-container">
+                            <img src="img/MINI-MOTOR.png" class="modal-product-image" alt="Mini Motor">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Mini Motor</h4>
+                            <p class="text-muted">Modelo: MM-2023</p>
+                            <p>O Mini motor, é um mini motor robustos que conta com uma caixa de redução 200:1 de engrenagens de metal, o que o torna ideal para utilização em projetos com pouco espaço como projetos de robótica.</p>
+                            
+                            <h5>Características Principais:</h5>
+                            <ul class="feature-list">
+                                <li>Compacto e robusto</li>
+                                <li>Relação de redução 200:1</li>
+                                <li>Engrenagens de metal</li>
+                                <li>Ideal para robótica e automação</li>
+                                <li>Baixo consumo de energia</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h5>Especificações Técnicas:</h5>
+                        <table class="specs-table">
+                            <tr>
+                                <th>Tensão</th>
+                                <td>6V - 12V DC</td>
+                            </tr>
+                            <tr>
+                                <th>Consumo</th>
+                                <td>0.5A - 1.5A</td>
+                            </tr>
+                            <tr>
+                                <th>Relação de Redução</th>
+                                <td>200:1</td>
+                            </tr>
+                            <tr>
+                                <th>Velocidade em Vazio</th>
+                                <td>100 RPM (12V)</td>
+                            </tr>
+                            <tr>
+                                <th>Torque de Saída</th>
+                                <td>Até 2 kg·cm</td>
+                            </tr>
+                            <tr>
+                                <th>Garantia</th>
+                                <td>12 meses</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary solicitar-orcamento" data-product="MINI-MOTOR">
+                        Solicitar Orçamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal para Produto 4 -->
+        <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel4">Leitor Biometrico - Detalhes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6 modal-image-container">
+                                <img src="img/BIO.png" class="modal-product-image" alt="Mini Motor">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Leitor Biometrico</h4>
+                                <p class="text-muted">Modelo: LB-01</p>
+                                <p>Leitor Biometrico.</p>
+                                
+                                <h5>Características Principais:</h5>
+                                <ul class="feature-list">
+                                    <li>Capacidade 20 administrador </li>
+                                    <li>Capacidade 80 usuarios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h5>Especificações Técnicas:</h5>
+                            <table class="specs-table">
+                                <tr>
+                                    <th>Alimentação</th>
+                                    <td>5,5V - 15V DC</td>
+                                </tr>
+                                <tr>
+                                    <th>Consumo</th>
+                                    <td>500 mA</td>
+                                </tr>
+                                <tr>
+                                    <th>Modos de Operação</th>
+                                    <td>Pulso - Travamento Automatico - Ignição</td>
+                                </tr>
+                                <tr>
+                                    <th>Saida</th>
+                                    <td>Relê</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary solicitar-orcamento" data-product="Biometria">
+                            Solicitar Orçamento
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para Produto 5 -->
+        <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModalLabel5">Trava Eletrõnica (Mitra) - Detalhes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6 modal-image-container">
+                                <img src="img/MITRA.png" class="modal-product-image" alt="Mini Motor">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Trava Eletrõnica (Mitra)</h4>
+                                <p class="text-muted"></p>
+                                <p>Trava Eletrõnica (Mitra).</p>
+                                
+                                <h5>Características Principais:</h5>
+                                <ul class="feature-list">
+                                    <li>Fechadura de tamanho 
+                                        compacto fácil instalação, é 
+                                        feita em liga de zinco (Zamak), 
+                                        garantindo resistência e 
+                                        durabilidade. 
+                                        Lingueta é movimentada por 
+                                        um motoredutor que em 
+                                        conjunto com dois sensores de 
+                                        posicionamento indicam se a 
+                                        trava está aberta ou fechada.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h5>Especificações Técnicas:</h5>
+                            <table class="specs-table">
+                                <tr>
+                                    <th>Alimentação</th>
+                                    <td>9V DC</td>
+                                </tr>
+                                <tr>
+                                    <th>Tipo de Linguenta</th>
+                                    <td>"Dead Bolt"</td>
+                                </tr>
+                                <tr>
+                                    <th>Sinais de Saida</th>
+                                    <td>Sinalização da Linguenta Aberta/Fechada</td>
+                                </tr>
+                                <tr>
+                                    <th>Sinais de Entrada</th>
+                                    <td>Pulso - Nivel e Fechamento Automatico</td>
+                                </tr>
+                                <tr>
+                                    <th>Dimensões da Trava</th>
+                                    <td>75 x 48 x 20,8 mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Dimensões da Lingueta</th>
+                                    <td>12 x 22,5 x 9,5 mm</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary solicitar-orcamento" data-product="Trava Eletrônica (MITRA)">
+                            Solicitar Orçamento
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Formulário de Contato -->
+                <section id="contato" class="contact-section">
+                    <div class="container">
+                        <h2 class="text-center mb-5">Entre em Contato</h2>
+                        
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+            <!-- Alterar o formulário para: -->
+                <form id="contactForm" action="https://formsubmit.co/filipe@pentasis.com.br" method="POST">
+                    <!-- Campos ocultos do FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="#" > <!-- Mantém na mesma página -->
+                    <input type="hidden" name="_subject" value="Novo contato do site ATMParts">
+                    
+                <!-- Campo dos formularios -->
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nome" class="form-label">Nome *</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">E-mail *</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="assunto" class="form-label">Assunto *</label>
+                        <input type="text" class="form-control" id="assunto" name="assunto" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem *</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Modal de Confirmação -->
+        <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-success text-white">
+                        <h5 class="modal-title" id="confirmationModalLabel">
+                            <i class="fas fa-check-circle me-2"></i>Mensagem Enviada!
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-check-circle text-success" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4 class="text-success">Obrigado pelo seu contato!</h4>
+                        <p class="mb-0">Sua mensagem foi enviada com sucesso. Entraremos em contato em breve.</p>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+                            <i class="fas fa-thumbs-up me-2"></i>Entendi
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Erro -->
+        <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger text-white">
+                        <h5 class="modal-title" id="errorModalLabel">
+                            <i class="fas fa-exclamation-circle me-2"></i>Campos Obrigatórios
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-exclamation-circle text-danger" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4 class="text-danger">Atenção!</h4>
+                        <p class="mb-0">Por favor, preencha todos os campos obrigatórios antes de enviar.</p>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                            <i class="fas fa-check me-2"></i>Entendi
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2025 ATMParts. Todos os direitos reservados.</p>
+            <p>Endereço: Rua Exemplo, 123 - Centro - Cidade/Estado</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Nosso JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
