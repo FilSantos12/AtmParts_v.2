@@ -1,4 +1,10 @@
 /* Estilos personalizados */
+.body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; 
+    margin: 0;
+    padding: 0;
+}
 .hero-section {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/FRENTE2.jpg');
     background-size: cover;
@@ -9,6 +15,16 @@
 /*Barra de navegação superior*/
 .custom-navbar {
     background-color: #274185;
+}
+
+.material-symbols-outlined {
+    font-size: 25px;
+    color:white;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
 
 .product-card {
@@ -315,3 +331,17 @@ html {
 .modal.show .modal-dialog {
     transform: translate(0, 0);
 }
+
+/* Ajuste das imagens do carrocel para proporções diferentes */
+  .carousel-img {
+    height: 300px;         /* Altura fixa para todas */
+    object-fit: contain;   /* Mantém proporção sem cortar */
+    background: #f8f9fa;   /* Fundo neutro para imagens menores */
+    border-radius: 8px;
+  }
+
+  /* Alterar cor dos ícones de navegação para azul */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(190deg) brightness(95%) contrast(90%);
+  }
