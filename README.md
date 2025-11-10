@@ -5,7 +5,7 @@ O projeto foi desenvolvido utilizando **HTML, CSS e JavaScript** no **Front-End*
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 - **Seção de Boas-Vindas**  
   Breve apresentação da empresa e proposta de valor.
@@ -21,7 +21,7 @@ O projeto foi desenvolvido utilizando **HTML, CSS e JavaScript** no **Front-End*
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **HTML5** → Estrutura da página  
 - **CSS3** → Estilização e responsividade  
@@ -29,5 +29,5 @@ O projeto foi desenvolvido utilizando **HTML, CSS e JavaScript** no **Front-End*
 
 ---
 
-## 📂 Estrutura do Projeto
+##  Estrutura do Projeto
 

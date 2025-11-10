@@ -152,6 +152,29 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Produto 6 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card product-card">
+                                <div id="carouselProduct6" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="video-container" style="height: 200px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                                        <video class="card-video-top" style="max-height: 100%; width: auto; object-fit: contain;" autoplay muted loop playsinline>
+                                            <source src="video/AppBle.mp4" type="video/mp4">
+                                            Seu navegador não suporta vídeos em HTML5.
+                                        </video>
+                                    </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Trava Eletrônica Bluethoth (BLE)</h5>
+                                    <p class="card-text">Dispositivo que permite trancar ou destrancar uma porta, controlando acessos em ambientes internos ou externos por meio de aplicativo e conexão Bluethoth.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="h5 mb-0 text-primary"></span>
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#productModal6">
+                                            Descrição
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -525,6 +548,85 @@
                 </div>
             </div>
         </div>
+
+                <!-- Modal para Produto 6 -->
+                    <div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel6" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                        
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productModalLabel6">BLE - Detalhes</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                            
+                            <!-- Carrossel de imagens -->
+                            <div class="col-md-6">
+                                <div id="carouselProduct6" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/AppOpen.png" class="d-block w-100 carousel-img" alt="AppOpen - Imagem 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/AppClose.png" class="d-block w-100 carousel-img" alt="AppClose - Imagem 2">
+                                    </div>
+                                </div>
+                                <!-- Controles -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct6" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct6" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                </div>
+                            </div>
+
+                            <!-- Texto -->
+                            <div class="col-md-6">
+                                <h4>Fechadura Eletrônica BLE</h4>
+                                <p class="text-muted">BLE</p>
+                                <p>
+                                Segurança, praticidade e inovação na palma da sua mão!
+                                A Fechadura Eletrônica BLE é a solução ideal para quem busca modernidade e controle total de acesso. Com tecnologia Bluetooth Low Energy (BLE), você pode trancar e destrancar portas diretamente pelo aplicativo no seu smartphone, sem a necessidade de chaves físicas.
+                                </p>
+                                
+                                <h5>Características Principais:</h5>
+                                <ul class="feature-list">
+                                <li>Alimentação 9V</li>
+                                <li>Controle via aplicativo BLE</li>
+                                <li>Segurança avançada</li>
+                                <li>Design moderno e discreto</li>
+                                <li>Modo de emergência</li>
+                                </ul>
+                            </div>
+
+                            </div>
+                            
+                            <!-- Especificações -->
+                            <div class="mt-4">
+                            <h5>Especificações Técnicas:</h5>
+                            <table class="specs-table">
+                                <tr><th>Alimentação</th><td>9V</td></tr>
+                                <tr><th>Controle via aplicativo BLE</th><td>gerencie acessos, cadastre usuários e monitore aberturas de forma simples e intuitiva.</td></tr>
+                                <tr><th>Segurança avançada</th><td>criptografia de dados que garante total proteção nas conexões Bluetooth.</td></tr>
+                                <tr><th>Design moderno e discreto</th><td>ideal para residências, escritórios e ambientes corporativos.</td></tr>
+                                <tr><th>Modo de emergência</th><td>acesso rápido em caso de bateria fraca, com alimentação externa 9V</td></tr>
+                            </table>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary solicitar-orcamento" data-product="MINI-MOTOR">
+                            Solicitar Orçamento
+                            </button>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
 
             <!-- Formulário de Contato -->
                 <section id="contato" class="contact-section">
